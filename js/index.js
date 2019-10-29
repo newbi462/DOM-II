@@ -91,3 +91,13 @@ messButton.addEventListener('mouseover', () => {
     repeat: -1
   });
 })
+
+// top the navigation from items from refreshing the page by using preventDefault()
+const killLink = document.querySelectorAll('.nav-link');
+
+for (let i = 0; i < killLink.length; i++) {
+  killLink[i].addEventListener('click', (event) => {
+    event.preventDefault();
+    console.log("killed link");
+  })
+}
