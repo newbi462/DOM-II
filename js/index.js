@@ -52,9 +52,30 @@ darkmode.addEventListener('dblclick', (event) => {
 */
 //5 green soc to get to 10?
 
-//move the bus
+//move the bus pics
 TweenMax.to(".intro img", 2, {
   y: 150, // + down - up
+  ease: Elastic.easeOut.config(1, 0.3),
+  yoyo: true,
+  repeat: -1
+});
+
+TweenMax.to(".content-section img", 2, {
+  x: -425, // + right - left
+  ease: Elastic.easeOut.config(1, 0.3),
+  yoyo: true,
+  repeat: -1
+});
+
+TweenMax.to(".inverse-content img", 2, {
+  x: 425, // + right - left
+  ease: Elastic.easeOut.config(1, 0.3),
+  yoyo: true,
+  repeat: -1
+});
+
+TweenMax.to(".content-destination img", 2, {
+  y: -150, // + down - up
   ease: Elastic.easeOut.config(1, 0.3),
   yoyo: true,
   repeat: -1
