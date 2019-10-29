@@ -10,6 +10,12 @@ mainNav.addEventListener('mouseleave', (event) => {
   event.target.style.backgroundColor = 'white';
 })
 
+//Nest two similar events somewhere in the site and prevent the event propagation properly
+const mainNav2 = document.querySelector('.nav-container');
+mainNav2.addEventListener('mouseover', (event) => {
+  event.target.style.backgroundColor = 'blue';
+  event.stopPropagation();
+})
 //keydown
 
 //  wheel
