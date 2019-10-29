@@ -50,3 +50,12 @@ darkmode.addEventListener('dblclick', (event) => {
 
 
 */
+//5 green soc to get to 10?
+
+//move the bus
+TweenMax.to(".intro img", 2, {
+  y: 150, // + down - up
+  ease: Elastic.easeOut.config(1, 0.3),
+  yoyo: true,
+  repeat: -1
+});
